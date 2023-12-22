@@ -1,14 +1,12 @@
 import "./Hero.css"
 
 import React from 'react'
-import introImg from "../Assets/Screenshot 2023-11-29 215651.png"
 import {Link} from "react-router-dom"
 
 const Hero = () => {
   return (
     <div className="hero">
         <div className="mask">
-    <img className="into-img" src={introImg}/>
         </div>
         <div className="content">
             <p>HI, I'M Gaurav Bhatia</p>
