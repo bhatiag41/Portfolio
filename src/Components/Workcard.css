@@ -36,7 +36,7 @@
     width: 100%;
     border-radius: 10px;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:760px) {
     .project-container{
         max-width:70%;
         margin:auto;
