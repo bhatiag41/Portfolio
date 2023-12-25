@@ -5,7 +5,7 @@
     align-items: center;
     justify-content:center ;
     flex-wrap: wrap;
-  height: 35vh;
+  height: 100%;
 }
 .about .left{
     text-align: center;

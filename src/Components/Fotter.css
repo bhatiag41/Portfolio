@@ -32,7 +32,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    /* padding: 1rem; */
+    padding-right: 1rem;
 }
 h4{
     font-size: 1.2rem
@@ -41,9 +41,14 @@ h4{
 p{
     font-size: 1.2rem;
 }
-@media  screen and (max-width:640px)  
+@media  screen and (max-width:740px)  
 {
 .footer-container{
     grid-template-columns: 1fr;
 }    
+.right{
+    align-items: center;
+    justify-content: flex-start;
+        padding: 1rem;
+}
 }
