@@ -1,8 +1,12 @@
 import './AboutContent.css'
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 
 const AboutContent = () => {
+    const [isActive, setActive] = useState(false);
+    const toggleClass = () => {
+        setActive(!isActive);
+      };
   return (
     <div className='about'>
         <div className='left'>
@@ -13,12 +17,12 @@ const AboutContent = () => {
     </Link>
         </div>
         <div className='right'>
-            <div className='img-container'>
-                <div className='img-stack top'>
+            <div className='img-container' onMouseEnter={toggleClass} onMouseLeave={toggleClass}>
+                <div className={isActive ? ' img-stack bottom': ' img-stack top'}>
                     <img src='../../Assets/ecosavvy.png' className='img' alt='true'/>
                 </div>
-                <div className='img-stack bottom'>
-                    <img src='../../Assets/ecosavvy.png' className='img' alt='true'/>
+                <div className={isActive ? ' img-stack top': ' img-stack bottom'}>
+                    <img src='../../Assets/img2.png' className='img' alt='true'/>
                 </div>
             </div>
         </div>

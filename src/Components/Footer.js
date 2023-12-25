@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Fotter.css"
+import {Link} from 'react-router-dom'
 import {FaFacebook, FaHome,FaLinkedin,FaMailBulk,FaTwitter} from "react-icons/fa"
 const Footer = () => {
   return (
@@ -24,15 +25,17 @@ const Footer = () => {
                 </div>
             </div>
             <div className='right'>
+            <Link to="https://www.facebook.com/Gstarbhatia">
             <FaFacebook  size={30} style={{
         color:'white',marginRight:"1rem"
-    }}/>
-    <FaTwitter  size={30} style={{
+    }}/></Link>
+    <Link to="https://www.x.com/bhatiag41"><FaTwitter  size={30} style={{
         color:'white',marginRight:"1rem"
-    }}/>
+    }}/></Link>
+    <Link to="https://www.linkedin.com/in/gaurav-bhatia-4336801b0/">
      <FaLinkedin  size={30} style={{
         color:'white',marginRight:"1rem"
-    }}/>
+    }}/></Link>
             </div>
         </div>
 
