@@ -17,7 +17,7 @@ const AboutContent = () => {
     </Link>
         </div>
         <div className='right'>
-            <div className='img-container' onMouseEnter={toggleClass} onMouseLeave={toggleClass}>
+            <div className='img-container' onClick={toggleClass} >
                 <div className={isActive ? ' img-stack bottom': ' img-stack top'}>
                     <img src='../../Assets/ecosavvy.png' className='img' alt='true'/>
                 </div>
