@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Fotter.css"
 import {Link} from 'react-router-dom'
-import {FaFacebook, FaGithub, FaHome,FaLinkedin,FaMailBulk,FaTwitter} from "react-icons/fa"
+import {FaFacebook, FaGithub, FaHandPointer, FaHome,FaLinkedin,FaMailBulk,FaTwitter} from "react-icons/fa"
+import {LuMousePointer2} from 'react-icons/lu'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className='right'>
             <div class="card">
   <span id='span'>My Socials</span>
-  <span id='hover'>Hover</span>
+  <span id='hover'><LuMousePointer2/></span>
   
 <Link  target='_blank'  className='social-link' to="https://www.facebook.com/Gstarbhatia">
             <FaFacebook  size={50} style={{

@@ -33,9 +33,9 @@ h4{
 p{
     font-size: 1.2rem;
 }
-.card svg {
+/* .card svg {
     height: 10vw;
-  }
+  } */
   
   .card {
     position: relative;
@@ -89,16 +89,14 @@ p{
   .card #hover{
     position: absolute;
     display: flex;
-    align-items:end;
+    align-items:flex-end;
     justify-content: flex-end;
-    width: 98%;
-    height: 90%;
-    font-size: 1rem;
-    font-weight: 400;
+    width: 99%;
+    height: 98%;
+    font-size: 1.4rem;
     opacity: 0.5;
     transition: opacity 0.25s;
     z-index: 2;
- 
   }
   .card:hover::before {
     opacity: 0.5;
